@@ -1,0 +1,264 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#Description:  This feature will test a login functionality"
+          },
+          {
+            "line": 4,
+            "value": "#Scenario: Login with valid username and password"
+          },
+          {
+            "line": 5,
+            "value": "#Given  open browser"
+          },
+          {
+            "line": 6,
+            "value": "#When Enter the url \"https://www.flipkart.com/\""
+          },
+          {
+            "line": 7,
+            "value": "#And click on my Account Login"
+          },
+          {
+            "line": 8,
+            "value": "#And enter registered username and password"
+          },
+          {
+            "line": 9,
+            "value": "#And click on login button"
+          },
+          {
+            "line": 10,
+            "value": "#Then user must be successfully login to the webpage"
+          },
+          {
+            "line": 13,
+            "value": "#"
+          },
+          {
+            "line": 15,
+            "value": "#Scenario: Login with valid username and password"
+          },
+          {
+            "line": 16,
+            "value": "#Given  open browser"
+          },
+          {
+            "line": 17,
+            "value": "#When Enter the url \"https://www.flipkart.com/\""
+          },
+          {
+            "line": 18,
+            "value": "#And click on my Account Login"
+          },
+          {
+            "line": 19,
+            "value": "#And enter registered username \"naveenkumar.vavilathota@gmail.com\" and password \"n9494626227\""
+          },
+          {
+            "line": 20,
+            "value": "#And click on login button"
+          },
+          {
+            "line": 21,
+            "value": "#Then user must be successfully login to the webpage"
+          },
+          {
+            "line": 24,
+            "value": "#Scenario Outline: Login with valid username and password"
+          },
+          {
+            "line": 25,
+            "value": "#Given  open browser"
+          },
+          {
+            "line": 26,
+            "value": "#When Enter the url \"https://www.flipkart.com/\""
+          },
+          {
+            "line": 27,
+            "value": "#And click on my Account Login"
+          },
+          {
+            "line": 28,
+            "value": "#And enter registered username \"\u003cusername\u003e\" and password \"\u003cusername\u003e\""
+          },
+          {
+            "line": 29,
+            "value": "#And click on login button"
+          },
+          {
+            "line": 30,
+            "value": "#Then user must be successfully login to the webpage"
+          },
+          {
+            "line": 32,
+            "value": "#Examples:"
+          },
+          {
+            "line": 33,
+            "value": "#|username|password|"
+          },
+          {
+            "line": 34,
+            "value": "#|naveenkumar.vavilathota@gmail.com|n9494626227|"
+          },
+          {
+            "line": 35,
+            "value": "#|naveenkumar.vavilathota@gmail.com|n994949|"
+          },
+          {
+            "line": 36,
+            "value": "#|naveen|n364774|"
+          },
+          {
+            "line": 39,
+            "value": "#Simple login with Data table forms"
+          },
+          {
+            "line": 40,
+            "value": "#Scenario: Login with valid username and password"
+          },
+          {
+            "line": 41,
+            "value": "#Given  open browser"
+          },
+          {
+            "line": 42,
+            "value": "#When Enter the url \"https://www.flipkart.com/\""
+          },
+          {
+            "line": 43,
+            "value": "#And click on my Account Login"
+          },
+          {
+            "line": 44,
+            "value": "#And enter registered username and password"
+          },
+          {
+            "line": 45,
+            "value": "#|naveenkumar.vavilathota@gmail.com| n9494626227 |"
+          },
+          {
+            "line": 46,
+            "value": "#And click on login button"
+          },
+          {
+            "line": 47,
+            "value": "#Then user must be successfully login to the webpage"
+          },
+          {
+            "line": 50,
+            "value": "#Simple login with Data table forms with header"
+          }
+        ],
+        "line": 51,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "myaccount-login-feature;login-with-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6428964400,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "open browser",
+            "match": {
+              "location": "My_account_Loginpage.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7244822600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Enter the url \"https://www.flipkart.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.flipkart.com/",
+                  "offset": 15
+                }
+              ],
+              "location": "My_account_Loginpage.enter_the_url(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6260477000,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 54,
+                "value": "#And click on my Account Login"
+              }
+            ],
+            "line": 55,
+            "name": "enter registered username and password",
+            "match": {
+              "location": "My_account_Loginpage.enter_registered_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "password"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "naveenkumar.vavilathota@gmail.com",
+                  "n9494626227"
+                ],
+                "line": 57
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71271500,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "click on login button",
+            "match": {
+              "location": "My_account_Loginpage.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 241988900,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user must be successfully login to the webpage",
+            "match": {
+              "location": "My_account_Loginpage.user_must_be_successfully_login_to_the_webpage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "myAccount-Login Feature",
+    "description": "",
+    "id": "myaccount-login-feature",
+    "keyword": "Feature",
+    "uri": "Feature/myAccount_login.Feature"
+  }
+]

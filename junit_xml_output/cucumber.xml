@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.247524">
+    <testcase classname="myAccount-Login Feature" name="Login with valid username and password" time="20.247524">
+        <system-out>
+            <![CDATA[Given open browser..........................................................passed
+When Enter the url "https://www.flipkart.com/"..............................passed
+And enter registered username and password..................................passed
+And click on login button...................................................passed
+Then user must be successfully login to the webpage.........................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
